@@ -1,4 +1,4 @@
-console.log ('Привет мир')
+/*      console.log ('Привет мир')
 // вычисление площади прямоугольника
 let x1 = -5;
 let y1 = 8;
@@ -58,4 +58,44 @@ console.log(a1 !== b1);
   else {
     console.log(randomNumber);
   }
+*/
+
+
+
+
+//ДЗ блок 3
+
+// 1. Проверка пароля
+
+let password = '12344-'
+
+if ((password.includes("-") == false) || (password.includes("_") == false) && (password.length < 4)) 
+{ console.log('Пароль недостаточно надежный')}
+  
+  else
+   { console.log('Пароль надежный')};
+
+
+// 2. Работа с регистром
+
+let name = "ВасHилий";                      
+let surname = "токареВ";
+let nameLowerCase = name.toLowerCase();          // Обработка имени
+let nameRedy = nameLowerCase[0].toUpperCase() + nameLowerCase.substring(1);
+
+textMessage = (nameRedy==name)==false ? "Имя было преобразовано" : "Имя осталось без изменений";
+
+console.log(name);
+console.log(nameRedy);
+console.log(textMessage);
+
+let surnameLowerCase = surname.toLowerCase();
+
+let surnameRedy = surnameLowerCase[0].toUpperCase() + surnameLowerCase.substring(1);
+
+surTextMessage = (surnameRedy==surname)==false ? "Имя было преобразовано" : "Имя осталось без изменений";
+
+console.log(surname);
+console.log(surnameRedy);
+console.log(surTextMessage);
 
